@@ -1,0 +1,5 @@
+# Local development against the sibling checkout of release_notes_gate.
+# `dart pub publish` ignores this file. Delete it to resolve from pub.dev.
+dependency_overrides:
+  release_notes_gate:
+    path: ../release_notes_gate

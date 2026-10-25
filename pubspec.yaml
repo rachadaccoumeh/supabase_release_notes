@@ -1,0 +1,35 @@
+name: supabase_release_notes
+description: >-
+  Supabase source for release_notes_gate. Keep one row per app release in a
+  table and show "what's new", "update available" or a changelog with the
+  release_notes_gate timeline UI. Works with hosted and self-hosted Supabase.
+version: 0.1.0
+repository: https://github.com/rachadaccoumeh/supabase_release_notes
+issue_tracker: https://github.com/rachadaccoumeh/supabase_release_notes/issues
+topics:
+  - release-notes
+  - changelog
+  - whats-new
+  - supabase
+  - postgres
+
+environment:
+  sdk: ^3.7.0
+  flutter: '>=3.27.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Model, parser, controller and UI.
+  release_notes_gate: ^0.1.0
+
+  # The client only; supabase_flutter's `Supabase.instance.client` is one.
+  supabase: ^2.16.5
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  # The tests answer the PostgREST request with a mock HTTP client.
+  http: ^1.6.0
